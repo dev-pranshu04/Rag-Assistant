@@ -7,8 +7,8 @@ Upload PDFs, text files, or CSVs — ask questions — get cited answers with li
 ---
 
 ## ⚡ Live Demo
-Once deployed, your app will be at:
-`https://your-username-rag-assistant-app-xxxxx.streamlit.app`
+Check It out
+`https://rag-assistant-04.streamlit.app`
 
 ---
 
