@@ -262,11 +262,13 @@ with st.sidebar:
         st.success("✅ API key loaded from secrets")
 
     model = st.selectbox("Model", [
-        "llama3-8b-8192",
-        "llama3-70b-8192",
-        "mixtral-8x7b-32768",
-        "gemma2-9b-it",
-    ], index=0, help="llama3-8b is fastest and free")
+        "llama-3.1-8b-instant",
+        "llama-3.3-70b-versatile",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "meta-llama/llama-4-scout-17b-16e-instruct",
+        "qwen/qwen3-32b",
+    ], index=0, help="llama-3.1-8b-instant is fastest · all are free tier")
 
     st.divider()
 
@@ -447,4 +449,5 @@ with tab_guide:
     with st.expander("Embedding model slow to load"):
         st.markdown("First load takes ~30 seconds on Streamlit Cloud. After that it's cached for the session.")
     with st.expander("How to use a different model"):
-        st.markdown("Change the model in the sidebar dropdown. `llama3-70b` is smarter but slower. `mixtral-8x7b-32768` handles very long documents well.")
+        st.markdown("Change the model in the sidebar dropdown. `llama-3.3-70b-versatile` is smarter but slower. `openai/gpt-oss-120b` is the most powerful. `llama-3.1-8b-instant` is fastest for quick answers.")
+
